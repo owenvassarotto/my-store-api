@@ -12,6 +12,3 @@ The project demonstrates how to create a basic web server using Node.js and Expr
 - Implement middleware for logging, error handling, etc.
 - Serve static files such as HTML, CSS, and JavaScript.
 - Demonstrate basic CRUD operations with a mock database.
-
-## Frontend View
-![Screenshot from 2024-02-27 00-48-13](https://github.com/owenvassarotto/my-store-api/assets/110845731/d5282286-6532-4d3b-9276-257bd66dcf88)
