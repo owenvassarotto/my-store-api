@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Ignore package-lock.json if using npm
+package-lock.json
+
