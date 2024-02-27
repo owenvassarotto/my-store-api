@@ -22,7 +22,7 @@ const options = {
 app.use(cors(options));
 
 app.get('/api', (req, res) => {
-  res.write('<h1 style="font-size:60px; font-weight:bold; text-align:center; text-transform:uppercase;">Home</h1>');
+  res.send('Hi from index.js! 🙋');
 });
 
 // routes function
