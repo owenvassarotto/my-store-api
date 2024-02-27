@@ -1,6 +1,5 @@
 const { faker } = require('@faker-js/faker');
 const { v4: uuidv4 } = require('uuid');
-const boom = require("@hapi/boom");
 
 class ProductService {
 
@@ -45,7 +44,7 @@ class ProductService {
 
   findOne(id){
     const product = this.products.find(item => item.id === id);
-    if(!product) throw boom.notFound("Product not found :/")
+    if(!product) throw new Error("NOT FOUND :|")
     return product;
   }
 
@@ -54,7 +53,7 @@ class ProductService {
     const index = this.products.findIndex(item => item.id === id);
 
     if(index === -1){
-      throw boom.notFound("Product not found :/");
+      throw new Error("NOT FOUND :|");
     }
 
     // Store the actual product object found at the index

@@ -5,7 +5,7 @@ const port = process.env.PORT || 8000;
 const routerAPI = require("./routes");
 require('dotenv').config();
 
-const { logErrors, errorHandler, boomErrorHandler } = require("./middlewares/errorHandler");
+const { logErrors, errorHandler } = require("./middlewares/errorHandler");
 
 app.use(express.json());
 
@@ -29,7 +29,7 @@ app.get('/api', (req, res) => {
 routerAPI(app);
 
 // use middlewares globally in all routes
-app.use(boomErrorHandler);
+// app.use(boomErrorHandler);
 app.use(logErrors);
 app.use(errorHandler);
 
